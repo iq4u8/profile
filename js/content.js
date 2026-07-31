@@ -74,6 +74,10 @@ window.SITE = {
         { title: "Diploma in Web Development (12 Months)", by: "STP Computer Education" },
         { title: "HTML Course", by: "STP Computer Education" },
         { title: "Advanced Excel Course", by: "STP Computer Education" },
-        { title: "Tally ERP 9 Course", by: "STP Computer Education" }
+        { title: "Tally ERP 9 Course", by: "STP Computer Education" },
+        { title: "Google Cybersecurity Professional", by: "Google (Coursera)" },
+        { title: "Google Data Analytics Professional", by: "Google (Coursera)" },
+        { title: "Meta Database Engineer", by: "Meta (Coursera)" },
+        { title: "Cybersecurity for Everyone", by: "Univ. of Maryland (Coursera)" }
     ]
 };
