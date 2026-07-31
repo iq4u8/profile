@@ -3,7 +3,7 @@
    Bas values change karo, page khud update ho jayega.
    ========================================================= */
 window.SITE = {
-    roles: ["Software Developer", "Electron.js Builder", "Android App Dev", "AI Tools Expert", "Privacy-First Coder"],
+    roles: ["Web Developer", "Electron.js Builder", "Android App Dev", "AI Tools Expert", "Privacy-First Coder"],
 
     chips: ["ELECTRON.JS", "ANDROID", "HTML", "CSS", "POWER BI", "AI TOOLS", "TALLY ERP 9", "MS EXCEL", "PROMPTING", "OFFLINE-FIRST"],
 
