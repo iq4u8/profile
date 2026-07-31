@@ -167,7 +167,7 @@
                                 </div>
                                 <div class="f-foot">
                                     <a href="javascript:void(0)" onclick="document.getElementById('qrModal').style.display='flex'; event.preventDefault();" aria-label="View QR Code" style="display: flex; align-items: center; gap: 8px; text-decoration: none; cursor: pointer;">
-                                        <img src="assets/qr.svg" style="width: 46px; height: 46px; border-radius: 4px; opacity: 0.9;" alt="QR Code">
+                                        <img src="assets/qr.svg" class="qr-img" style="width: 46px; height: 46px; border-radius: 4px; opacity: 0.9;" alt="QR Code">
                                         <span style="font-size: 0.6rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.1em; font-weight: 600;">CLICK HERE</span>
                                     </a>
                                     <span class="f-est">EST. SATNA · MP<br>ID-485005-DEV</span>
@@ -238,8 +238,10 @@
 
     <!-- QR Code Modal -->
     <div id="qrModal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.7); z-index: 9999; backdrop-filter: blur(8px); justify-content: center; align-items: center;" onclick="this.style.display='none'">
-        <div style="background: var(--bg-1); padding: 32px; border-radius: 12px; border: 1px solid var(--line-strong); box-shadow: 0 20px 40px rgba(0,0,0,0.6); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; max-width: 90vw;" onclick="event.stopPropagation()">
-            <img src="assets/qr.svg" style="width: 240px; height: 240px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.4));" alt="QR Code Large">
+        <div style="background: var(--surface); padding: 32px; border-radius: 12px; border: 1px solid var(--line-strong); box-shadow: 0 20px 40px rgba(0,0,0,0.6); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; max-width: 90vw;" onclick="event.stopPropagation()">
+            <div style="padding: 12px; background: transparent; border-radius: 16px; border: 1px solid var(--line-strong); display: flex; justify-content: center; align-items: center;">
+                <img src="assets/qr.svg" class="qr-img" style="width: 240px; height: 240px; display: block;" alt="QR Code Large">
+            </div>
             <h3 style="margin: 0; font-size: 1.1rem; color: var(--text); letter-spacing: 0.1em; font-weight: 600;">Scan to Visit</h3>
             <p style="margin: 0; font-size: 0.85rem; color: var(--cyan); font-family: 'JetBrains Mono', monospace;">https://iq4u8.shop</p>
             <button onclick="document.getElementById('qrModal').style.display='none'" style="margin-top: 12px; padding: 10px 24px; border-radius: 6px; background: var(--bg-2); border: 1px solid var(--line-strong); color: var(--muted); cursor: pointer; font-family: 'JetBrains Mono'; font-size: 0.8rem; transition: 0.3s;" onmouseover="this.style.color='var(--text)'; this.style.borderColor='var(--cyan)'" onmouseout="this.style.color='var(--muted)'; this.style.borderColor='var(--line-strong)'">CLOSE</button>
