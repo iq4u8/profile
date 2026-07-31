@@ -3,21 +3,20 @@
    Bas values change karo, page khud update ho jayega.
    ========================================================= */
 window.SITE = {
-    roles: ["Web Developer", "Electron.js Builder", "Android App Dev", "AI Tools Expert", "Privacy-First Coder"],
+    roles: ["Web Developer", "Electron.js Builder", "Android App Dev", "Privacy-First Coder"],
 
-    chips: ["ELECTRON.JS", "ANDROID", "HTML", "CSS", "POWER BI", "AI TOOLS", "TALLY ERP 9", "MS EXCEL", "PROMPTING", "OFFLINE-FIRST"],
+    chips: ["ELECTRON.JS", "ANDROID", "HTML", "CSS", "POWER BI", "TALLY ERP 9", "MS EXCEL", "OFFLINE-FIRST"],
 
     stats: [{ n: "05", l: "Projects" }, { n: "05", l: "Play Store" }, { n: "4.0", l: "GPA · B.Com" }],
 
     skills: [
         { name: "Electron.js", pct: 85 },
         { name: "HTML / CSS", pct: 82 },
-        { name: "AI & Prompting", pct: 90 },
         { name: "Tally / Excel", pct: 92 },
         { name: "Power BI", pct: 85 }
     ],
 
-    marquee: ["ELECTRON.JS", "ANDROID APPS", "HTML", "CSS", "TALLY ERP 9", "ADVANCED EXCEL", "POWER BI DASHBOARDS", "GST & TDS", "BANK RECONCILIATION", "PROMPT ENGINEERING", "CHATGPT", "GEMINI", "OFFLINE-FIRST", "PRIVACY-FIRST", "MIS REPORTS"],
+    marquee: ["ELECTRON.JS", "ANDROID APPS", "HTML", "CSS", "TALLY ERP 9", "ADVANCED EXCEL", "POWER BI DASHBOARDS", "GST & TDS", "BANK RECONCILIATION", "OFFLINE-FIRST", "PRIVACY-FIRST", "MIS REPORTS"],
 
     socials: [
         { key: "github", href: "https://github.com/iq4u8", label: "GitHub" },
@@ -35,8 +34,8 @@ window.SITE = {
     projects: [
         {
             n: "01", title: "Shield Browser", badge: "▸ PLAY STORE · 2026", tone: "amber",
-            desc: "Custom desktop browser built with Electron.js — Brave-level ad blocking, AI agentic browsing, and a Safari-inspired UI.",
-            tags: ["ELECTRON.JS", "AD BLOCKING", "AI AGENTIC", "SAFARI UI"], href: "https://github.com/iq4u8"
+            desc: "Custom desktop browser built with Electron.js — Brave-level ad blocking, and a Safari-inspired UI.",
+            tags: ["ELECTRON.JS", "AD BLOCKING", "SAFARI UI"], href: "https://github.com/iq4u8"
         },
 
         {
@@ -46,9 +45,9 @@ window.SITE = {
         },
 
         {
-            n: "03", title: "AI Calculator", badge: "▸ PLAY STORE · 2026", tone: "amber",
-            desc: "AI-powered calculator that shows complete step-by-step method explanations alongside every result. Completely free.",
-            tags: ["AI-POWERED", "STEP-BY-STEP", "FREE"], href: "https://github.com/iq4u8"
+            n: "03", title: "Smart Calculator", badge: "▸ PLAY STORE · 2026", tone: "amber",
+            desc: "Smart calculator that shows complete step-by-step method explanations alongside every result. Completely free.",
+            tags: ["SMART-CALC", "STEP-BY-STEP", "FREE"], href: "https://github.com/iq4u8"
         },
 
         {
