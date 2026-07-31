@@ -19,13 +19,13 @@
 }
 
 [data-theme="light"] {
-    --bg: #eef4f7;
-    --bg-2: #e2edf2;
+    --bg: #e1eaef;
+    --bg-2: #d6e2e8;
     --surface: #ffffff;
-    --surface-2: #f4f9fb;
+    --surface-2: #f2f7fa;
     --text: #0a2433;
     --muted: #547286;
-    --line: rgba(10, 64, 88, .10);
+    --line: rgba(10, 64, 88, .15);
     --line-strong: rgba(10, 64, 88, .28);
     --cyan: #0891b2;
     --amber: #d97706;
