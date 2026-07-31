@@ -494,12 +494,12 @@ body.loaded .bar i {
 }
 
 .tag-1 {
-    top: 5%;
+    top: 12%;
     left: -6%
 }
 
 .tag-2 {
-    bottom: 11%;
+    bottom: 16%;
     right: -8%;
     animation-delay: -2.7s
 }
