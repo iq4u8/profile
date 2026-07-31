@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- EDIT-ME (1/4) browser tab title -->
+    <title>Priyanshu Pandey — Software Developer</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23060f18'/%3E%3Cpath d='M16 6l9 10-9 10-9-10z' fill='%233ddcf7'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- shared SVG gradient -->
+    <svg class="svg-defs" aria-hidden="true">
+        <defs>
+            <linearGradient id="avg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" style="stop-color:var(--cyan)" />
+                <stop offset="1" style="stop-color:var(--mint)" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <canvas id="bg"></canvas>
+    <div class="grid-overlay"></div>
+    <div class="grain"></div>
+    <div id="progress"></div>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav">
+        <a class="logo" href="#">
+            <span class="logo-mark"><svg width="16" height="16" viewBox="0 0 16 16">
+                    <path d="M8 1l6 7-6 7-6-7z" fill="currentColor" />
+                </svg></span>
+            <!-- EDIT-ME (2/4) logo text -->
+            PP.DEV
+        </a>
+        <!-- EDIT-ME status pill -->
+        <div class="status"><span class="dot"></span> OPEN TO WORK</div>
+        <button class="toggle" id="themeToggle" aria-label="Toggle dark / light mode">
+            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <circle cx="12" cy="12" r="4.5" />
+                <path
+                    d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M19.4 4.6l-1.8 1.8M6.4 17.6l-1.8 1.8" />
+            </svg>
+            <svg class="moon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z" />
+            </svg>
+            <span class="knob"></span>
+        </button>
+    </header>
+
+    <main>
+        <!-- ============ HERO ============ -->
+        <section class="hero">
+            <div class="left">
+                <!-- EDIT-ME kicker / location -->
+                <p class="kicker">PORTFOLIO // SATNA · MP — INDIA</p>
+                <!-- EDIT-ME (3/4) big name -->
+                <h1>PRIYANSHU<br><span class="outline">PANDEY</span></h1>
+                <p class="role-line">&gt; <span id="typed"></span><span class="cursor">▌</span></p>
+                <!-- EDIT-ME bio -->
+                <p class="bio">B.Com graduate (Grade A, GPA 4.0) turned self-taught developer. I build privacy-first,
+                    offline-first Android &amp; desktop apps — from an ad-blocking browser to a zero-data messenger made
+                    for every smartphone.</p>
+                <div class="chips" id="chips"></div>
+                <div class="actions">
+                    <a class="btn btn-primary" href="#projects">View Projects ↓</a>
+                    <!-- EDIT-ME CV file: assets/resume.pdf rakhna -->
+                    <a class="btn btn-ghost" href="assets/resume.pdf" download>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3v12m0 0 4-4m-4 4-4-4" />
+                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+                        </svg>
+                        Download CV
+                    </a>
+                </div>
+                <div class="stats" id="stats"></div>
+            </div>
+
+            <!-- ============ ID CARD ============ -->
+            <div class="card-zone">
+                <svg class="orbit" viewBox="0 0 520 520">
+                    <g class="o1">
+                        <circle cx="260" cy="260" r="238" />
+                    </g>
+                    <g class="o2">
+                        <circle class="ring" cx="260" cy="260" r="196" />
+                        <circle class="d1" cx="260" cy="64" r="5" />
+                        <circle class="d2" cx="456" cy="260" r="3.5" />
+                    </g>
+                </svg>
+                <div class="tag tag-1"><b>◈</b> COMMERCE + CODE</div>
+                <div class="tag tag-2"><b>⚡</b> PRIVACY-FIRST</div>
+
+                <div class="card-wrap">
+                    <div class="card-tilt">
+                        <div class="card" id="card" tabindex="0" role="button" aria-label="Flip profile card">
+
+                            <!-- FRONT -->
+                            <div class="face front">
+                                <span class="corner c-tl"></span><span class="corner c-tr"></span><span
+                                    class="corner c-bl"></span><span class="corner c-br"></span>
+                                <div class="scan"></div>
+                                <div class="f-head">
+                                    <span class="f-id">NEXUS ID · PP-485005</span>
+                                    <svg class="sim" width="30" height="24" viewBox="0 0 30 24">
+                                        <rect x="1" y="1" width="28" height="22" rx="4" />
+                                        <path d="M1 8h8M1 16h8M21 8h8M21 16h8M11 1v22M19 1v22" />
+                                    </svg>
+                                </div>
+                                <div class="avatar-wrap">
+                                    <svg class="avatar-rings" viewBox="0 0 200 200" aria-hidden="true">
+                                        <circle class="ring1" cx="100" cy="100" r="96" />
+                                        <circle class="ring2" cx="100" cy="100" r="84" stroke="url(#avg)" />
+                                        <g class="av-orbit">
+                                            <circle class="av-dot1" cx="100" cy="10" r="4" />
+                                        </g>
+                                    </svg>
+                                    <!-- EDIT-ME photo: apni uploaded photo assets/me.png naam se save karo -->
+                                    <img class="avatar-img" id="avatarImg" src="assets/me.png" alt="Priyanshu Pandey"
+                                        onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+                                    <svg class="avatar-fallback" viewBox="0 0 200 200" aria-hidden="true">
+                                        <defs>
+                                            <clipPath id="avclip">
+                                                <circle cx="100" cy="100" r="70" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#avclip)">
+                                            <circle class="av-bg" cx="100" cy="100" r="70" />
+                                            <circle cx="100" cy="82" r="27" fill="url(#avg)" />
+                                            <ellipse cx="100" cy="168" rx="47" ry="44" fill="url(#avg)" opacity=".92" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <!-- EDIT-ME (4/4) card name + role -->
+                                <h2 class="f-name">Priyanshu Pandey</h2>
+                                <p class="f-role">Software Developer</p>
+                                <div class="f-div"><i>◆</i></div>
+                                <div class="f-details" style="text-align: left; margin: 20px 0; font-size: 0.8rem; color: var(--text); padding: 0 10px;">
+                                    <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 6px; margin-bottom: 10px;">
+                                        <span style="color: var(--muted);">Gender</span>
+                                        <strong>Male</strong>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 6px; margin-bottom: 10px;">
+                                        <span style="color: var(--muted);">Age</span>
+                                        <strong>24 (30 Aug 2001)</strong>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 6px;">
+                                        <span style="color: var(--muted);">Relationship Status</span>
+                                        <strong>Single</strong>
+                                    </div>
+                                </div>
+                                <div class="f-foot">
+                                    <a href="javascript:void(0)" onclick="document.getElementById('qrModal').style.display='flex'; event.preventDefault();" aria-label="View QR Code" style="display: flex; align-items: center; gap: 8px; text-decoration: none; cursor: pointer;">
+                                        <img src="assets/qr.svg" style="width: 46px; height: 46px; border-radius: 4px; opacity: 0.9;" alt="QR Code">
+                                        <span style="font-size: 0.6rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.1em; font-weight: 600;">CLICK HERE</span>
+                                    </a>
+                                    <span class="f-est">EST. SATNA · MP<br>ID-485005-DEV</span>
+                                </div>
+                            </div>
+
+                            <!-- BACK -->
+                            <div class="face back">
+                                <span class="corner c-tl"></span><span class="corner c-tr"></span><span
+                                    class="corner c-bl"></span><span class="corner c-br"></span>
+                                <p class="b-title">SKILL MATRIX</p>
+                                <div id="skills"></div>
+                                <div class="b-div"></div>
+                                <p class="b-title">CONNECT</p>
+                                <div class="socials" id="socials"></div>
+                                <p class="b-cta" style="justify-content: center; gap: 8px;"><span>CLICK TO CHECKOUT PROFILES</span><b>▮</b></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <p class="hint">[ CLICK CARD TO FLIP ]</p>
+            </div>
+        </section>
+
+        <!-- ============ MARQUEE ============ -->
+        <div class="marquee" aria-hidden="true">
+            <div class="m-track" id="marquee"></div>
+        </div>
+
+        <!-- ============ PROJECTS ============ -->
+        <section class="section" id="projects">
+            <div class="sec-head reveal">
+                <span class="sec-num">01</span>
+                <h2 class="sec-title">SELECTED WORK</h2>
+                <span class="sec-line"></span><span class="sec-count" id="proj-count"></span>
+            </div>
+            <div class="ledger-rows" id="projects-list"></div>
+        </section>
+
+        <!-- ============ CREDENTIALS ============ -->
+        <section class="section">
+            <div class="sec-head reveal">
+                <span class="sec-num">02</span>
+                <h2 class="sec-title">CREDENTIALS</h2>
+                <span class="sec-line"></span><span class="sec-count">EDUCATION + CERTIFICATIONS</span>
+            </div>
+            <div class="creds-grid">
+                <div class="reveal">
+                    <h4 class="cred-label">// EDUCATION</h4>
+                    <ul class="edu" id="edu"></ul>
+                </div>
+                <div class="reveal" style="transition-delay:.12s">
+                    <h4 class="cred-label">// CERTIFICATIONS</h4>
+                    <ul class="certs" id="certs"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- EDIT-ME footer contact -->
+    <footer class="footer reveal">
+        <span>© 2026 PRIYANSHU PANDEY — SATNA, MP 485005</span>
+        <span><a href="tel:+9177XXX XXX13">+91 77XXX XXX13</a> · <a
+                href="mailto:priyanshupandey8301@gmail.com">PRIYANSHUPANDEY8301@GMAIL.COM</a></span>
+        <span>BUILT WITH <b>♥</b> · DEVELOPED BY ▲ IQ4U8</span>
+    </footer>
+
+    <!-- QR Code Modal -->
+    <div id="qrModal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.7); z-index: 9999; backdrop-filter: blur(8px); justify-content: center; align-items: center;" onclick="this.style.display='none'">
+        <div style="background: var(--bg-1); padding: 32px; border-radius: 12px; border: 1px solid var(--line-strong); box-shadow: 0 20px 40px rgba(0,0,0,0.6); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; max-width: 90vw;" onclick="event.stopPropagation()">
+            <img src="assets/qr.svg" style="width: 240px; height: 240px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.4));" alt="QR Code Large">
+            <h3 style="margin: 0; font-size: 1.1rem; color: var(--text); letter-spacing: 0.1em; font-weight: 600;">Scan to Visit</h3>
+            <p style="margin: 0; font-size: 0.85rem; color: var(--cyan); font-family: 'JetBrains Mono', monospace;">https://iq4u8.shop</p>
+            <button onclick="document.getElementById('qrModal').style.display='none'" style="margin-top: 12px; padding: 10px 24px; border-radius: 6px; background: var(--bg-2); border: 1px solid var(--line-strong); color: var(--muted); cursor: pointer; font-family: 'JetBrains Mono'; font-size: 0.8rem; transition: 0.3s;" onmouseover="this.style.color='var(--text)'; this.style.borderColor='var(--cyan)'" onmouseout="this.style.color='var(--muted)'; this.style.borderColor='var(--line-strong)'">CLOSE</button>
+        </div>
+    </div>
+
+    <!-- order matters: content → render → effects -->
+    <script src="js/content.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/card.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/reveal.js"></script>
+</body>
+
+</html>

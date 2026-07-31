@@ -1,0 +1,69 @@
+@media (max-width:920px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 58px;
+        padding-top: 22px;
+        min-height: 0
+    }
+
+    .status {
+        display: none
+    }
+
+    .stat {
+        padding: 0 18px
+    }
+
+    .creds-grid {
+        grid-template-columns: 1fr;
+        gap: 34px
+    }
+
+    .p-row {
+        grid-template-columns: 1fr;
+        gap: 10px
+    }
+
+    .p-arrow {
+        display: none
+    }
+
+    .sec-count {
+        display: none
+    }
+}
+
+@media (max-width:560px) {
+    .tag {
+        display: none
+    }
+
+    .orbit {
+        opacity: .35
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+    * {
+        animation: none !important;
+        transition: none !important
+    }
+
+    .hero .left>*,
+    .card-zone,
+    .reveal {
+        opacity: 1;
+        transform: none
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: .8s cubic-bezier(.22, 1, .36, 1)
+}
+
+.reveal.in {
+    opacity: 1;
+    transform: none
+}
