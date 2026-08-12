@@ -7,7 +7,7 @@ window.SITE = {
 
     chips: ["ELECTRON.JS", "ANDROID", "HTML", "CSS", "POWER BI", "TALLY ERP 9", "MS EXCEL", "OFFLINE-FIRST"],
 
-    stats: [{ n: "05", l: "Projects" }, { n: "05", l: "Play Store" }, { n: "4.0", l: "GPA · B.Com" }],
+    stats: [{ n: "06", l: "Projects" }, { n: "05", l: "Play Store" }, { n: "4.0", l: "GPA · B.Com" }],
 
     skills: [
         { name: "Electron.js", pct: 85 },
@@ -33,33 +33,34 @@ window.SITE = {
 
     projects: [
         {
-            n: "01", title: "Shield Browser", badge: "▸ PLAY STORE · 2026", tone: "amber",
-            desc: "Custom desktop browser built with Electron.js — Brave-level ad blocking, and a Safari-inspired UI.",
-            tags: ["ELECTRON.JS", "AD BLOCKING", "SAFARI UI"], href: "https://github.com/iq4u8"
+            n: "01", title: "SOS Phonebook", badge: "COMPLETED", tone: "mint",
+            desc: "Built an offline-first smart directory for Indian emergency numbers. Implemented the local database architecture and search algorithms using AI assistance.",
+            tags: ["OFFLINE ARCHITECTURE", "DATABASE PLANNING", "APP DEVELOPMENT"], href: "https://github.com/iq4u8"
         },
-
         {
-            n: "02", title: "Rakshak SOS", badge: "▸ PLAY STORE · 2026", tone: "amber",
-            desc: "SOS directory — smart-search phonebook of every Indian emergency number: police, ambulance, telecom & government. Fully offline.",
-            tags: ["SOS", "OFFLINE", "SMART SEARCH"], href: "https://github.com/iq4u8"
+            n: "02", title: "Smart Bank Reconciliation App", badge: "IN DEVELOPMENT", tone: "amber",
+            desc: "Developing a client-side web utility that ingests Cash Book and Bank Statement CSVs to automatically detect, compare, and highlight mismatched financial entries.",
+            tags: ["ACCOUNTING AUTOMATION", "CSV PARSING", "JAVASCRIPT LOGIC"], href: "https://github.com/iq4u8"
         },
-
         {
-            n: "03", title: "Smart Calculator", badge: "▸ PLAY STORE · 2026", tone: "amber",
-            desc: "Smart calculator that shows complete step-by-step method explanations alongside every result. Completely free.",
-            tags: ["SMART-CALC", "STEP-BY-STEP", "FREE"], href: "https://github.com/iq4u8"
+            n: "03", title: "Tally Data Visualizer Dashboard", badge: "IN DEVELOPMENT", tone: "amber",
+            desc: "Architecting an interactive dashboard utilizing Chart.js to transform raw Tally ERP 9 export data into visual metrics for sales, expenses, and profitability.",
+            tags: ["DATA ANALYTICS", "CHART.JS", "BUSINESS INTELLIGENCE"], href: "https://github.com/iq4u8"
         },
-
         {
-            n: "04", title: "Messages", badge: "◉ ON PLAY STORE", tone: "mint",
-            desc: "Private messenger that runs fully on-device and fully isolated — end-to-end sealed, zero data collection, nothing ever shared or uploaded.",
-            tags: ["ZERO-DATA", "ON-DEVICE", "ENCRYPTED"], href: "https://github.com/iq4u8"
+            n: "04", title: "Automated GST & Invoice Validator", badge: "IN DEVELOPMENT", tone: "amber",
+            desc: "Building a smart validation tool that cross-verifies invoice calculations, SGST/CGST rules, and compliance parameters instantly using algorithmic checks.",
+            tags: ["GST COMPLIANCE", "TAX AUTOMATION", "FINTECH"], href: "https://github.com/iq4u8"
         },
-
         {
-            n: "05", title: "Calendar", badge: "▸ PLAY STORE · 2026", tone: "amber",
-            desc: "Advanced calendar with a modern UI — Indian festivals, panchang & muhurat, reminders and everything your day needs, at a glance.",
-            tags: ["FESTIVALS", "PANCHANG", "MODERN UI"], href: "https://github.com/iq4u8"
+            n: "05", title: "Messages", badge: "CONCEPTUAL PHASE", tone: "amber",
+            desc: "Prototyping a fully on-device, isolated messaging application focusing on zero data collection and encryption principles.",
+            tags: ["DATA PRIVACY", "APPLICATION LOGIC", "SECURITY CONCEPTS"], href: "https://github.com/iq4u8"
+        },
+        {
+            n: "06", title: "AI Calculator", badge: "IN DEVELOPMENT", tone: "amber",
+            desc: "Designing an intelligent educational calculator that computes results and displays a step-by-step breakdown of the mathematical process.",
+            tags: ["EDUCATIONAL TECH", "AI LOGIC", "PROBLEM SOLVING"], href: "https://github.com/iq4u8"
         }
     ],
 
