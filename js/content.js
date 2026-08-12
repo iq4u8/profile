@@ -30,7 +30,7 @@ window.SITE = {
 
     projects: [
         {
-            n: "01", title: "SOS Phonebook", badge: "COMPLETED · JULY 2026 - AUG 2026", tone: "mint",
+            n: "01", title: "SOS Phonebook", badge: "COMPLETED · JUNE 2026 - AUG 2026", tone: "mint",
             desc: "Built an offline-first smart directory for Indian emergency numbers. Implemented the local database architecture and search algorithms using AI assistance.",
             tags: ["OFFLINE ARCHITECTURE", "DATABASE PLANNING", "APP DEVELOPMENT"], href: "https://github.com/iq4u8"
         },
@@ -45,17 +45,17 @@ window.SITE = {
             tags: ["DATA ANALYTICS", "CHART.JS", "BUSINESS INTELLIGENCE"], href: "https://github.com/iq4u8"
         },
         {
-            n: "04", title: "Automated GST & Invoice Validator", badge: "COMPLETED · FEB 2026 - MAY 2026", tone: "mint",
+            n: "04", title: "Automated GST & Invoice Validator", badge: "COMPLETED · MAR 2026 - MAY 2026", tone: "mint",
             desc: "Built a smart validation tool that cross-verifies invoice calculations, SGST/CGST rules, and compliance parameters instantly using algorithmic checks.",
             tags: ["GST COMPLIANCE", "TAX AUTOMATION", "FINTECH"], href: "https://github.com/iq4u8"
         },
         {
-            n: "05", title: "Messages", badge: "COMPLETED · JAN 2026 - APR 2026", tone: "mint",
+            n: "05", title: "Messages", badge: "COMPLETED · FEB 2026 - APR 2026", tone: "mint",
             desc: "Prototyped a fully on-device, isolated messaging application focusing on zero data collection and encryption principles.",
             tags: ["DATA PRIVACY", "APPLICATION LOGIC", "SECURITY CONCEPTS"], href: "https://github.com/iq4u8"
         },
         {
-            n: "06", title: "AI Calculator", badge: "COMPLETED · JAN 2026 - MAR 2026", tone: "mint",
+            n: "06", title: "AI Calculator", badge: "COMPLETED · FEB 2026 - MAR 2026", tone: "mint",
             desc: "Designed an intelligent educational calculator that computes results and displays a step-by-step breakdown of the mathematical process.",
             tags: ["EDUCATIONAL TECH", "AI LOGIC", "PROBLEM SOLVING"], href: "https://github.com/iq4u8"
         }
