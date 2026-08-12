@@ -22,11 +22,8 @@ window.SITE = {
         { key: "github", href: "https://github.com/iq4u8", label: "GitHub" },
         { key: "linkedin", href: "https://linkedin.com/in/iq4u8", label: "LinkedIn" },
         { key: "email", href: "mailto:priyanshupandey8301@gmail.com", label: "Email" },
-        { key: "phone", href: "tel:+9177XXXXXX13", label: "Phone" },
         { key: "instagram", href: "https://instagram.com/iq4u8", label: "Instagram" },
-        { key: "whatsapp", href: "https://wa.me/9177XXXXXX13", label: "WhatsApp" },
         { key: "telegram", href: "https://t.me/iq4u8", label: "Telegram" },
-        { key: "youtube", href: "https://youtube.com/@iq4u8", label: "YouTube" },
         { key: "playstore", href: "https://play.google.com/store/apps/developer?id=Paradox+Protocol", label: "Play Store" },
         { key: "webpage", href: "https://iq4u8.shop", label: "Webpage" }
     ],
