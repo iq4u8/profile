@@ -40,9 +40,9 @@ window.SITE = {
             tags: ["PYTHON 3", "TKINTER", "SECURITY", "MULTITHREADING"], href: "https://github.com/iq4u8/CLM-Sensor"
         },
         {
-            n: "03", title: "AI Step-by-Step Calculator", badge: "COMPLETED · WEB APP", tone: "mint",
-            desc: "Intelligent offline calculator featuring a custom BODMAS parsing engine that generates detailed, human-readable math steps simulating a handwritten notebook.",
-            tags: ["VANILLA JS", "ALGORITHMS", "UI/UX DESIGN"], href: "https://github.com/iq4u8/AI-Calculator"
+            n: "03", title: "AI Step-by-Step Calculator", badge: "COMPLETED · PUBLISHED ON PLAY STORE", tone: "mint",
+            desc: "Intelligent offline Android calculator featuring a custom BODMAS parsing engine that generates detailed, human-readable math steps simulating a handwritten notebook.",
+            tags: ["ANDROID APP", "ALGORITHMS", "OFFLINE-FIRST"], href: "https://github.com/iq4u8/AI-Calculator"
         },
         {
             n: "04", title: "Smart Bank Reconciliation App", badge: "UPCOMING PROJECT", tone: "cyan",
