@@ -30,32 +30,32 @@ window.SITE = {
 
     projects: [
         {
-            n: "01", title: "SOS Phonebook", badge: "COMPLETED · PUBLISHED ON PLAY STORE", tone: "mint",
+            n: "01", title: "SOS Phonebook", badge: "JUNE 2026 - AUG 2026 · PLAY STORE", tone: "mint",
             desc: "Offline-first Android emergency directory built with React 19, Vite, and Capacitor 8. Features native geolocation, haptics, and zero data collection.",
             tags: ["REACT JS", "CAPACITOR", "OFFLINE-FIRST", "ANDROID DEV"], href: "https://github.com/iq4u8/SOS-Phonebook"
         },
         {
-            n: "02", title: "CLM Sensor", badge: "COMPLETED · WINDOWS UTILITY", tone: "mint",
+            n: "02", title: "CLM Sensor", badge: "MAY 2026 - JULY 2026 · WINDOWS UTILITY", tone: "mint",
             desc: "Real-time privacy monitoring utility for Windows. Uses Python and Win32 APIs to detect active camera, microphone, and location usage via live registry polling.",
             tags: ["PYTHON 3", "TKINTER", "SECURITY", "MULTITHREADING"], href: "https://github.com/iq4u8/CLM-Sensor"
         },
         {
-            n: "03", title: "AI Step-by-Step Calculator", badge: "COMPLETED · PUBLISHED ON PLAY STORE", tone: "mint",
+            n: "03", title: "AI Step-by-Step Calculator", badge: "FEB 2026 - MAR 2026 · PLAY STORE", tone: "mint",
             desc: "Intelligent offline Android calculator featuring a custom BODMAS parsing engine that generates detailed, human-readable math steps simulating a handwritten notebook.",
             tags: ["ANDROID APP", "ALGORITHMS", "OFFLINE-FIRST"], href: "https://github.com/iq4u8/AI-Calculator"
         },
         {
-            n: "04", title: "Smart Bank Reconciliation App", badge: "UPCOMING PROJECT", tone: "cyan",
+            n: "04", title: "Smart Bank Reconciliation App", badge: "APR 2026 - JUNE 2026 · UPCOMING", tone: "cyan",
             desc: "Client-side web utility that ingests Cash Book and Bank Statement CSVs to automatically detect, compare, and highlight mismatched financial entries.",
             tags: ["DATA AUTOMATION", "CSV PARSING", "JAVASCRIPT LOGIC"], href: "https://github.com/iq4u8"
         },
         {
-            n: "05", title: "Tally Data Visualizer", badge: "UPCOMING PROJECT", tone: "cyan",
+            n: "05", title: "Tally Data Visualizer", badge: "MAR 2026 - MAY 2026 · UPCOMING", tone: "cyan",
             desc: "Interactive dashboard utilizing Chart.js to transform raw Tally ERP 9 export data into visual metrics for sales, expenses, and profitability.",
             tags: ["DATA ANALYTICS", "CHART.JS", "BUSINESS INTELLIGENCE"], href: "https://github.com/iq4u8"
         },
         {
-            n: "06", title: "Automated GST Validator", badge: "UPCOMING PROJECT", tone: "cyan",
+            n: "06", title: "Automated GST Validator", badge: "FEB 2026 - APR 2026 · UPCOMING", tone: "cyan",
             desc: "Smart validation tool that cross-verifies invoice calculations, SGST/CGST rules, and compliance parameters instantly using algorithmic checks.",
             tags: ["GST COMPLIANCE", "TAX AUTOMATION", "FINTECH"], href: "https://github.com/iq4u8"
         }
