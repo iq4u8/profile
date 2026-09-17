@@ -3,20 +3,20 @@
    Bas values change karo, page khud update ho jayega.
    ========================================================= */
 window.SITE = {
-    roles: ["Web Developer", "Electron.js Builder", "Android App Dev", "Privacy-First Coder"],
+    roles: ["FinTech & Web Developer", "Python Automation Builder", "Accounting Tech Coder", "Privacy-First Developer"],
 
-    chips: ["REACT JS", "CAPACITOR", "PYTHON", "ELECTRON.JS", "ANDROID", "HTML/CSS", "POWER BI", "TALLY ERP 9", "OFFLINE-FIRST"],
+    chips: ["JAVASCRIPT", "PYTHON", "HTML5/CSS3", "TALLY ERP 9", "ADVANCED EXCEL", "FINTECH & BRS", "GST COMPLIANCE", "DATA ANALYTICS", "OFFLINE-FIRST"],
 
-    stats: [{ n: "06", l: "Projects" }, { n: "05", l: "Play Store" }, { n: "4.0", l: "GPA · B.Com" }],
+    stats: [{ n: "06", l: "Core Projects" }, { n: "08+", l: "Certifications" }, { n: "4.0", l: "GPA · B.Com" }],
 
     skills: [
-        { name: "React / Vite / JS", pct: 90 },
-        { name: "Python / Tkinter", pct: 85 },
-        { name: "Tally / Excel", pct: 92 },
-        { name: "Power BI", pct: 85 }
+        { name: "JavaScript / Web Apps", pct: 90 },
+        { name: "Python / Win32 / Tkinter", pct: 88 },
+        { name: "Tally ERP 9 / Adv. Excel", pct: 95 },
+        { name: "FinTech & GST Compliance", pct: 90 }
     ],
 
-    marquee: ["REACT JS", "CAPACITOR 8", "PYTHON 3", "WIN32 API", "ELECTRON.JS", "ANDROID APPS", "HTML/CSS", "TALLY ERP 9", "POWER BI", "GST & TDS", "BANK RECONCILIATION", "OFFLINE-FIRST", "PRIVACY-FIRST"],
+    marquee: ["JAVASCRIPT (ES6+)", "PYTHON 3", "WIN32 API", "HTML5 / CSS3", "FINTECH APPS", "BANK RECONCILIATION", "TALLY ERP 9", "ADVANCED EXCEL", "GST & TDS", "DATA ANALYTICS", "OFFLINE-FIRST", "PRIVACY-FIRST"],
 
     socials: [
         { key: "github", href: "https://github.com/iq4u8", label: "GitHub" },
