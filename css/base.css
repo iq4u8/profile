@@ -254,7 +254,11 @@ footer {
     }
 }
 
-/* Light Theme QR Code Fix */
+/* Light & Dark Theme QR Code Dynamic Color */
 [data-theme="light"] .qr-img {
-    filter: invert(0.85) drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+    filter: brightness(0) drop-shadow(0 2px 6px rgba(0,0,0,0.15));
+}
+
+[data-theme="dark"] .qr-img {
+    filter: none;
 }
