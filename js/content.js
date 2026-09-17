@@ -47,17 +47,17 @@ window.SITE = {
         {
             n: "04", title: "Smart Bank Reconciliation App", badge: "APR 2026 - JUNE 2026 · LIVE ON VERCEL", tone: "mint",
             desc: "Autonomous, zero-knowledge client-side Bank Reconciliation (BRS) engine with 5-pass heuristic matching, Rule-of-9 transposition audit, 14-language localization, and statutory ICAI reporting.",
-            tags: ["FINTECH", "HEURISTIC ENGINE", "ZERO-KNOWLEDGE", "VERCEL"], href: "https://iqsmartrecon.vercel.app"
+            tags: ["FINTECH", "HEURISTIC ENGINE", "ZERO-KNOWLEDGE", "VERCEL"], href: "https://github.com/iq4u8/smart-recon"
         },
         {
             n: "05", title: "Tally Data Visualizer", badge: "MAR 2026 - MAY 2026 · UPCOMING", tone: "cyan",
             desc: "Interactive dashboard utilizing Chart.js to transform raw Tally ERP 9 export data into visual metrics for sales, expenses, and profitability.",
-            tags: ["DATA ANALYTICS", "CHART.JS", "BUSINESS INTELLIGENCE"], href: "https://github.com/iq4u8"
+            tags: ["DATA ANALYTICS", "CHART.JS", "BUSINESS INTELLIGENCE"], href: "https://github.com/iq4u8/Tally-Data-Visualizer"
         },
         {
             n: "06", title: "Automated GST Validator", badge: "FEB 2026 - APR 2026 · UPCOMING", tone: "cyan",
             desc: "Smart validation tool that cross-verifies invoice calculations, SGST/CGST rules, and compliance parameters instantly using algorithmic checks.",
-            tags: ["GST COMPLIANCE", "TAX AUTOMATION", "FINTECH"], href: "https://github.com/iq4u8"
+            tags: ["GST COMPLIANCE", "TAX AUTOMATION", "FINTECH"], href: "https://github.com/iq4u8/Automated-GST-Validator"
         }
     ],
 
