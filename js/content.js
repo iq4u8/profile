@@ -45,9 +45,9 @@ window.SITE = {
             tags: ["ANDROID APP", "ALGORITHMS", "OFFLINE-FIRST"], href: "https://github.com/iq4u8/AI-Calculator"
         },
         {
-            n: "04", title: "Smart Bank Reconciliation App", badge: "APR 2026 - JUNE 2026 · UPCOMING", tone: "cyan",
-            desc: "Client-side web utility that ingests Cash Book and Bank Statement CSVs to automatically detect, compare, and highlight mismatched financial entries.",
-            tags: ["DATA AUTOMATION", "CSV PARSING", "JAVASCRIPT LOGIC"], href: "https://github.com/iq4u8"
+            n: "04", title: "Smart Bank Reconciliation App", badge: "APR 2026 - JUNE 2026 · LIVE ON VERCEL", tone: "mint",
+            desc: "Autonomous, zero-knowledge client-side Bank Reconciliation (BRS) engine with 5-pass heuristic matching, Rule-of-9 transposition audit, 14-language localization, and statutory ICAI reporting.",
+            tags: ["FINTECH", "HEURISTIC ENGINE", "ZERO-KNOWLEDGE", "VERCEL"], href: "https://iqsmartrecon.vercel.app"
         },
         {
             n: "05", title: "Tally Data Visualizer", badge: "MAR 2026 - MAY 2026 · UPCOMING", tone: "cyan",
