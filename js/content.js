@@ -50,9 +50,9 @@ window.SITE = {
             tags: ["FINTECH", "HEURISTIC ENGINE", "ZERO-KNOWLEDGE", "VERCEL"], href: "https://github.com/iq4u8/smart-recon"
         },
         {
-            n: "05", title: "Tally Data Visualizer", badge: "MAR 2026 - MAY 2026 · UPCOMING", tone: "cyan",
-            desc: "Interactive dashboard utilizing Chart.js to transform raw Tally ERP 9 export data into visual metrics for sales, expenses, and profitability.",
-            tags: ["DATA ANALYTICS", "CHART.JS", "BUSINESS INTELLIGENCE"], href: "https://github.com/iq4u8/Tally-Data-Visualizer"
+            n: "05", title: "Tally Data Visualizer", badge: "MAR 2026 - MAY 2026 · LIVE BI ENGINE", tone: "mint",
+            desc: "Interactive financial BI dashboard utilizing Chart.js to transform raw Tally ERP 9 / TallyPrime DayBooks and Excel exports into executive metrics, 30-day debtor/creditor aging, and liquidity curves with zero-knowledge privacy.",
+            tags: ["DATA ANALYTICS", "CHART.JS", "BUSINESS INTELLIGENCE", "TALLY ERP 9"], href: "https://github.com/iq4u8/Tally-Data-Visualizer"
         },
         {
             n: "06", title: "Automated GST Validator", badge: "FEB 2026 - APR 2026 · UPCOMING", tone: "cyan",
