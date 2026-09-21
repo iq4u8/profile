@@ -55,9 +55,9 @@ window.SITE = {
             tags: ["DATA ANALYTICS", "CHART.JS", "BUSINESS INTELLIGENCE", "TALLY ERP 9"], href: "https://github.com/iq4u8/Tally-Data-Visualizer"
         },
         {
-            n: "06", title: "Automated GST Validator", badge: "FEB 2026 - APR 2026 · UPCOMING", tone: "cyan",
-            desc: "Smart validation tool that cross-verifies invoice calculations, SGST/CGST rules, and compliance parameters instantly using algorithmic checks.",
-            tags: ["GST COMPLIANCE", "TAX AUTOMATION", "FINTECH"], href: "https://github.com/iq4u8/Automated-GST-Validator"
+            n: "06", title: "Automated GST Validator", badge: "FEB 2026 - APR 2026 · LIVE STATUTORY ENGINE", tone: "mint",
+            desc: "Autonomous FinTech compliance platform that audits Indian GST invoices across 10 statutory rules: Modulo 36 Luhn GSTIN checksum, Place of Supply tax-split, standard slabs, and 1-Click Auto-Fix for precision drift.",
+            tags: ["GST COMPLIANCE", "TAX AUTOMATION", "FINTECH", "MODULO 36 LUHN"], href: "https://github.com/iq4u8/Automated-GST-Validator"
         }
     ],
 
