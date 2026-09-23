@@ -19,21 +19,70 @@
 
     // chips
     var chips = $('#chips'); if (chips) { chips.innerHTML = ''; S.chips.forEach(function (c) { chips.appendChild(el('span', 'chip', c)); }); }
-    // stats
-    var stats = $('#stats'); if (stats) { stats.innerHTML = ''; S.stats.forEach(function (s) { var d = el('div', 'stat'); d.appendChild(el('b', null, s.n)); d.appendChild(el('span', null, s.l)); stats.appendChild(d); }); }
+    
+    // stats with animated roll-up counters
+    var stats = $('#stats');
+    if (stats) {
+        stats.innerHTML = '';
+        S.stats.forEach(function (s) {
+            var d = el('div', 'stat');
+            var b = el('b', 'stat-num', '00');
+            b.dataset.target = s.n;
+            d.appendChild(b);
+            d.appendChild(el('span', null, s.l));
+            stats.appendChild(d);
+        });
+
+        function animateStatCounters() {
+            document.querySelectorAll('.stat-num').forEach(function (numEl) {
+                var target = numEl.dataset.target;
+                var isFloat = target.indexOf('.') !== -1;
+                var hasPlus = target.indexOf('+') !== -1;
+                var targetVal = parseFloat(target);
+                var duration = 1400;
+                var startTime = null;
+
+                function step(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    var elapsed = timestamp - startTime;
+                    var progress = Math.min(elapsed / duration, 1);
+                    var ease = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+                    var curr = targetVal * ease;
+
+                    if (isFloat) {
+                        numEl.textContent = curr.toFixed(1);
+                    } else {
+                        var floored = Math.floor(curr);
+                        numEl.textContent = (floored < 10 ? '0' : '') + floored + (hasPlus ? '+' : '');
+                    }
+
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        numEl.textContent = target;
+                    }
+                }
+                requestAnimationFrame(step);
+            });
+        }
+        setTimeout(animateStatCounters, 400);
+    }
+
     // skills
     var skills = $('#skills'); if (skills) { skills.innerHTML = ''; S.skills.forEach(function (s) { var w = el('div', 'skill'); w.innerHTML = '<div class="s-top"><span>' + s.name + '</span><span>' + s.pct + '%</span></div><div class="bar"><i style="--w:' + s.pct + '%"></i></div>'; skills.appendChild(w); }); }
     // socials
     var soc = $('#socials'); if (soc) { soc.innerHTML = ''; S.socials.forEach(function (s) { var a = el('a', 'soc'); a.href = s.href; a.setAttribute('aria-label', s.label); a.innerHTML = ICONS[s.key] || ''; if (s.key !== 'email' && s.key !== 'phone') { a.target = '_blank'; a.rel = 'noopener'; } soc.appendChild(a); }); }
     // marquee
     var mq = $('#marquee'); if (mq) { var items = S.marquee.map(function (x) { return '<span>' + x + '<i>◆</i></span>'; }).join(''); mq.innerHTML = items + items; }
-    // projects
+    
+    // projects list
     var pl = $('#projects-list');
     if (pl) {
         pl.innerHTML = '';
         S.projects.forEach(function (p, i) {
             var row = el('div', 'p-row reveal');
             row.style.transitionDelay = (i * 0.07) + 's';
+            row.dataset.category = p.category || 'all';
 
             var primaryLink = p.demoUrl || p.repoUrl || p.href;
 
@@ -68,10 +117,78 @@
         });
     }
     var pc = $('#proj-count'); if (pc) pc.textContent = ('0' + S.projects.length).slice(-2) + ' PROJECTS · ALL SHIPPED';
+
+    // Interactive category filter tabs
+    var filterBtns = document.querySelectorAll('.p-filter');
+    filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var cat = btn.dataset.filter;
+            filterBtns.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+
+            var rows = document.querySelectorAll('#projects-list .p-row');
+            var visibleCount = 0;
+            rows.forEach(function (row) {
+                var rCat = row.dataset.category;
+                if (cat === 'all' || rCat === cat) {
+                    row.style.display = 'grid';
+                    row.style.opacity = '1';
+                    row.style.transform = 'none';
+                    visibleCount++;
+                } else {
+                    row.style.opacity = '0';
+                    row.style.transform = 'translateY(12px)';
+                    row.style.display = 'none';
+                }
+            });
+
+            if (pc) {
+                if (cat === 'all') {
+                    pc.textContent = ('0' + S.projects.length).slice(-2) + ' PROJECTS · ALL SHIPPED';
+                } else {
+                    pc.textContent = ('0' + visibleCount).slice(-2) + ' ' + cat.toUpperCase() + ' PROJECTS';
+                }
+            }
+        });
+    });
+
     // education
     var edu = $('#edu'); if (edu) { edu.innerHTML = ''; S.education.forEach(function (e) { var li = el('li'); li.innerHTML = '<span class="yr">' + e.yr + '</span><div><b>' + e.title + '</b><span>' + e.sub + '</span></div>'; edu.appendChild(li); }); }
     // certs
     var certs = $('#certs'); if (certs) { certs.innerHTML = ''; S.certs.forEach(function (c) { var li = el('li'); li.innerHTML = '<b>✓</b> ' + c.title + ' <em>— ' + c.by + '</em>'; certs.appendChild(li); }); }
+
+    // 1-Click Copy Toast Notification
+    var toast = document.getElementById('toast');
+    var toastText = document.getElementById('toast-text');
+    var toastTimer = null;
+
+    function showToast(msg) {
+        if (!toast) return;
+        if (toastText) toastText.textContent = msg;
+        toast.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+            toast.classList.remove('show');
+        }, 2600);
+    }
+
+    document.addEventListener('click', function (e) {
+        var trigger = e.target.closest('.copy-trigger') || (e.target.closest('a[href^="mailto:"]') ? e.target.closest('a') : null);
+        if (trigger) {
+            var copyVal = trigger.dataset.copy || (trigger.href ? trigger.href.replace('mailto:', '').replace('tel:', '') : trigger.textContent.trim());
+            var label = trigger.dataset.label || 'Details';
+            if (copyVal && navigator.clipboard) {
+                e.preventDefault();
+                navigator.clipboard.writeText(copyVal).then(function () {
+                    showToast('✓ ' + label + ' copied: ' + copyVal);
+                }).catch(function () {
+                    showToast('✓ Copied: ' + copyVal);
+                });
+            }
+        }
+    });
+
+
 
     if (window.__observeReveals) window.__observeReveals();
 })();

@@ -32,6 +32,7 @@ window.SITE = {
         {
             n: "01",
             title: "SOS Phonebook",
+            category: "mobile",
             badge: "SHIPPED · ANDROID & PLAY STORE",
             tone: "mint",
             desc: "Offline-first Android emergency response directory built with React 19, Vite, and Capacitor 8. Features native geolocation, haptics, instant offline search across thousands of emergency contacts, and zero data collection.",
@@ -45,6 +46,7 @@ window.SITE = {
         {
             n: "02",
             title: "CLM Sensor (Privacy Sentinel)",
+            category: "python",
             badge: "SHIPPED · WINDOWS UTILITY",
             tone: "mint",
             desc: "Real-time privacy monitoring desktop utility for Windows 10/11. Uses Python 3 and native Win32 APIs to detect active camera, microphone, and location hardware access via sub-millisecond Windows registry polling with dark/light studio GUI.",
@@ -58,6 +60,7 @@ window.SITE = {
         {
             n: "03",
             title: "AI Step-by-Step Calculator",
+            category: "mobile",
             badge: "SHIPPED · WEB & ANDROID ENGINE",
             tone: "mint",
             desc: "Intelligent offline calculator featuring a custom recursive-descent BODMAS parsing engine that generates detailed, human-readable math solutions simulating a handwritten notebook tutor. Built for Android WebView & Progressive Web App.",
@@ -71,6 +74,7 @@ window.SITE = {
         {
             n: "04",
             title: "Smart Bank Reconciliation App",
+            category: "fintech",
             badge: "SHIPPED · LIVE ON VERCEL",
             tone: "mint",
             desc: "Autonomous, zero-knowledge client-side FinTech platform with 5-pass heuristic reconciliation, Rule-of-9 transposition error audit, 14-language localization, and instant statutory ICAI BRS export. Live on Vercel.",
@@ -84,6 +88,7 @@ window.SITE = {
         {
             n: "05",
             title: "Tally Data Visualizer",
+            category: "fintech",
             badge: "SHIPPED · LIVE ON VERCEL",
             tone: "mint",
             desc: "Executive 4D FinTech BI dashboard transforming raw Tally ERP 9 / TallyPrime DayBooks, XML exports, and CSVs into real-time C-suite visual analytics, 30-day debtor/creditor aging heatmaps, and cash flow liquidity curves with zero-knowledge client-side privacy. Live on Vercel.",
@@ -97,6 +102,7 @@ window.SITE = {
         {
             n: "06",
             title: "Automated GST & Invoice Validator",
+            category: "fintech",
             badge: "SHIPPED · STATUTORY ENGINE",
             tone: "mint",
             desc: "Autonomous FinTech compliance workstation and invoice auditor engineered against 10 statutory rules: Modulo 36 Luhn GSTIN checksum, Place of Supply tax-split validation, Section 16(2) ITC Pre-Flight check, and 1-Click Auto-Fix for precision rounding drift.",

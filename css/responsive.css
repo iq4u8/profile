@@ -126,6 +126,30 @@
         gap: 12px;
         padding: 30px 20px !important;
     }
+
+    /* Horizontal scroll for category filters on mobile */
+    .p-filters {
+        overflow-x: auto;
+        flex-wrap: nowrap !important;
+        padding-bottom: 8px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .p-filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .p-filter {
+        flex-shrink: 0;
+    }
+
+    .back-to-top {
+        bottom: 18px !important;
+        right: 18px !important;
+        width: 42px !important;
+        height: 42px !important;
+    }
 }
 
 @media (max-width:560px) {
