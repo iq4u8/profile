@@ -378,3 +378,104 @@
     font-size: .78rem;
     opacity: .75
 }
+
+/* ============ MORE PROJECTS GITHUB BANNER ============ */
+.more-projects {
+    margin-top: 40px;
+    padding: 1px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--cyan) 35%, transparent), color-mix(in srgb, var(--mint) 25%, transparent) 45%, var(--line-strong));
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.more-projects:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 42px rgba(0, 0, 0, 0.35), 0 0 28px color-mix(in srgb, var(--cyan) 18%, transparent);
+}
+
+.mp-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    padding: 28px 34px;
+    background: var(--surface);
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+}
+
+.mp-info {
+    flex: 1;
+    max-width: 660px;
+}
+
+.mp-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: var(--cyan);
+    margin-bottom: 10px;
+}
+
+.mp-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 10px var(--cyan);
+    animation: pulseDot 2s infinite ease-in-out;
+}
+
+.mp-title {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 8px 0;
+    line-height: 1.35;
+}
+
+.mp-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0;
+}
+
+.mp-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.mp-btn {
+    white-space: nowrap;
+    padding: 13px 24px;
+    font-size: 0.84rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px color-mix(in srgb, var(--cyan) 35%, transparent);
+    transition: all 0.3s ease;
+}
+
+.mp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 32px color-mix(in srgb, var(--cyan) 55%, transparent);
+}
+
+.mp-sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.64rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+}

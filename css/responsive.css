@@ -40,6 +40,29 @@
     .sec-count {
         display: none
     }
+
+    .mp-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 24px 20px;
+    }
+
+    .mp-cta {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .mp-btn {
+        width: 100%;
+        justify-content: center;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .mp-sub {
+        text-align: center;
+    }
 }
 
 @media (max-width:768px) {
