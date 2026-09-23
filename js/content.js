@@ -30,34 +30,82 @@ window.SITE = {
 
     projects: [
         {
-            n: "01", title: "SOS Phonebook", badge: "JUNE 2026 - AUG 2026 · PLAY STORE", tone: "mint",
-            desc: "Offline-first Android emergency directory built with React 19, Vite, and Capacitor 8. Features native geolocation, haptics, and zero data collection.",
-            tags: ["REACT JS", "CAPACITOR", "OFFLINE-FIRST", "ANDROID DEV"], href: "https://github.com/iq4u8/SOS-Phonebook"
+            n: "01",
+            title: "SOS Phonebook",
+            badge: "SHIPPED · ANDROID & PLAY STORE",
+            tone: "mint",
+            desc: "Offline-first Android emergency response directory built with React 19, Vite, and Capacitor 8. Features native geolocation, haptics, instant offline search across thousands of emergency contacts, and zero data collection.",
+            tags: ["REACT 19", "CAPACITOR 8", "ANDROID APK/AAB", "OFFLINE-FIRST", "NATIVE GEOLOCATION"],
+            repoUrl: "https://github.com/iq4u8/SOS-Phonebook",
+            demoUrl: "https://github.com/iq4u8/SOS-Phonebook",
+            demoLabel: "📱 Android App",
+            repoLabel: "GitHub Repo",
+            href: "https://github.com/iq4u8/SOS-Phonebook"
         },
         {
-            n: "02", title: "CLM Sensor", badge: "MAY 2026 - JULY 2026 · WINDOWS UTILITY", tone: "mint",
-            desc: "Real-time privacy monitoring utility for Windows. Uses Python and Win32 APIs to detect active camera, microphone, and location usage via live registry polling.",
-            tags: ["PYTHON 3", "TKINTER", "SECURITY", "MULTITHREADING"], href: "https://github.com/iq4u8/CLM-Sensor"
+            n: "02",
+            title: "CLM Sensor (Privacy Sentinel)",
+            badge: "SHIPPED · WINDOWS UTILITY",
+            tone: "mint",
+            desc: "Real-time privacy monitoring desktop utility for Windows 10/11. Uses Python 3 and native Win32 APIs to detect active camera, microphone, and location hardware access via sub-millisecond Windows registry polling with dark/light studio GUI.",
+            tags: ["PYTHON 3", "WIN32 API", "TKINTER STUDIO", "SECURITY & PRIVACY", "MULTITHREADING"],
+            repoUrl: "https://github.com/iq4u8/CLM-Sensor",
+            demoUrl: "https://github.com/iq4u8/CLM-Sensor",
+            demoLabel: "📥 Setup .exe",
+            repoLabel: "GitHub Repo",
+            href: "https://github.com/iq4u8/CLM-Sensor"
         },
         {
-            n: "03", title: "AI Step-by-Step Calculator", badge: "FEB 2026 - MAR 2026 · PLAY STORE", tone: "mint",
-            desc: "Intelligent offline Android calculator featuring a custom BODMAS parsing engine that generates detailed, human-readable math steps simulating a handwritten notebook.",
-            tags: ["ANDROID APP", "ALGORITHMS", "OFFLINE-FIRST"], href: "https://github.com/iq4u8/AI-Calculator"
+            n: "03",
+            title: "AI Step-by-Step Calculator",
+            badge: "SHIPPED · WEB & ANDROID ENGINE",
+            tone: "mint",
+            desc: "Intelligent offline calculator featuring a custom recursive-descent BODMAS parsing engine that generates detailed, human-readable math solutions simulating a handwritten notebook tutor. Built for Android WebView & Progressive Web App.",
+            tags: ["ALGORITHMS", "PARSER ENGINE", "BODMAS LOGIC", "ANDROID PWA", "SPEECH RECOGNITION"],
+            repoUrl: "https://github.com/iq4u8/ai-calculator",
+            demoUrl: "https://github.com/iq4u8/ai-calculator",
+            demoLabel: "⚡ Webapp / Repo",
+            repoLabel: "GitHub Repo",
+            href: "https://github.com/iq4u8/ai-calculator"
         },
         {
-            n: "04", title: "Smart Bank Reconciliation App", badge: "APR 2026 - JUNE 2026 · LIVE ON VERCEL", tone: "mint",
-            desc: "Autonomous, zero-knowledge client-side Bank Reconciliation (BRS) engine with 5-pass heuristic matching, Rule-of-9 transposition audit, 14-language localization, and statutory ICAI reporting.",
-            tags: ["FINTECH", "HEURISTIC ENGINE", "ZERO-KNOWLEDGE", "VERCEL"], href: "https://github.com/iq4u8/smart-recon"
+            n: "04",
+            title: "Smart Bank Reconciliation App",
+            badge: "SHIPPED · LIVE ON VERCEL",
+            tone: "mint",
+            desc: "Autonomous, zero-knowledge client-side FinTech platform with 5-pass heuristic reconciliation, Rule-of-9 transposition error audit, 14-language localization, and instant statutory ICAI BRS export. Live on Vercel.",
+            tags: ["FINTECH", "HEURISTIC ENGINE", "RULE-OF-9 AUDIT", "ICAI STATUTORY BRS", "LIVE ON VERCEL"],
+            repoUrl: "https://github.com/iq4u8/smart-recon",
+            demoUrl: "https://iqsmartrecon.vercel.app",
+            demoLabel: "⚡ Live Demo",
+            repoLabel: "GitHub Repo",
+            href: "https://iqsmartrecon.vercel.app"
         },
         {
-            n: "05", title: "Tally Data Visualizer", badge: "MAR 2026 - MAY 2026 · LIVE BI ENGINE", tone: "mint",
-            desc: "Interactive financial BI dashboard utilizing Chart.js to transform raw Tally ERP 9 / TallyPrime DayBooks and Excel exports into executive metrics, 30-day debtor/creditor aging, and liquidity curves with zero-knowledge privacy.",
-            tags: ["DATA ANALYTICS", "CHART.JS", "BUSINESS INTELLIGENCE", "TALLY ERP 9"], href: "https://github.com/iq4u8/Tally-Data-Visualizer"
+            n: "05",
+            title: "Tally Data Visualizer",
+            badge: "SHIPPED · LIVE ON VERCEL",
+            tone: "mint",
+            desc: "Executive 4D FinTech BI dashboard transforming raw Tally ERP 9 / TallyPrime DayBooks, XML exports, and CSVs into real-time C-suite visual analytics, 30-day debtor/creditor aging heatmaps, and cash flow liquidity curves with zero-knowledge client-side privacy. Live on Vercel.",
+            tags: ["FINTECH BI", "CHART.JS V4", "TALLY ERP 9 / PRIME", "4D COCKPIT", "LIVE ON VERCEL"],
+            repoUrl: "https://github.com/iq4u8/tally-data-visualizer",
+            demoUrl: "https://tally-data-visualizer.vercel.app",
+            demoLabel: "⚡ Live Demo",
+            repoLabel: "GitHub Repo",
+            href: "https://tally-data-visualizer.vercel.app"
         },
         {
-            n: "06", title: "Automated GST Validator", badge: "FEB 2026 - APR 2026 · LIVE STATUTORY ENGINE", tone: "mint",
-            desc: "Autonomous FinTech compliance platform that audits Indian GST invoices across 10 statutory rules: Modulo 36 Luhn GSTIN checksum, Place of Supply tax-split, standard slabs, and 1-Click Auto-Fix for precision drift.",
-            tags: ["GST COMPLIANCE", "TAX AUTOMATION", "FINTECH", "MODULO 36 LUHN"], href: "https://github.com/iq4u8/Automated-GST-Validator"
+            n: "06",
+            title: "Automated GST & Invoice Validator",
+            badge: "SHIPPED · STATUTORY ENGINE",
+            tone: "mint",
+            desc: "Autonomous FinTech compliance workstation and invoice auditor engineered against 10 statutory rules: Modulo 36 Luhn GSTIN checksum, Place of Supply tax-split validation, Section 16(2) ITC Pre-Flight check, and 1-Click Auto-Fix for precision rounding drift.",
+            tags: ["GST COMPLIANCE", "MODULO 36 LUHN", "TAX AUTOMATION", "FINTECH", "1-CLICK AUTO-FIX"],
+            repoUrl: "https://github.com/iq4u8/Automated-GST-Validator",
+            demoUrl: "https://github.com/iq4u8/Automated-GST-Validator",
+            demoLabel: "⚡ Workstation Repo",
+            repoLabel: "GitHub Repo",
+            href: "https://github.com/iq4u8/Automated-GST-Validator"
         }
     ],
 

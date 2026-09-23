@@ -28,8 +28,46 @@
     // marquee
     var mq = $('#marquee'); if (mq) { var items = S.marquee.map(function (x) { return '<span>' + x + '<i>◆</i></span>'; }).join(''); mq.innerHTML = items + items; }
     // projects
-    var pl = $('#projects-list'); if (pl) { pl.innerHTML = ''; S.projects.forEach(function (p, i) { var a = el('a', 'p-row reveal'); a.href = p.href; a.target = '_blank'; a.rel = 'noopener'; a.style.transitionDelay = (i * 0.07) + 's'; a.innerHTML = '<span class="p-num">' + p.n + '</span><div><div class="p-top"><h3>' + p.title + '</h3><span class="p-badge ' + p.tone + '">' + p.badge + '</span></div><p class="p-desc">' + p.desc + '</p><div class="p-tags">' + p.tags.map(function (t) { return '<span>' + t + '</span>'; }).join('') + '</div></div><div style="display:flex; align-items:center; gap:24px;"><img src="assets/project/' + p.n + '.svg" class="qr-img" style="width:64px; height:64px; border-radius:4px; opacity:0.85; transition:0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.85" alt="Project QR"><span class="p-arrow">→</span></div>'; pl.appendChild(a); }); }
-    var pc = $('#proj-count'); if (pc) pc.textContent = ('0' + S.projects.length).slice(-2) + ' PROJECTS · github.com/iq4u8';
+    var pl = $('#projects-list');
+    if (pl) {
+        pl.innerHTML = '';
+        S.projects.forEach(function (p, i) {
+            var row = el('div', 'p-row reveal');
+            row.style.transitionDelay = (i * 0.07) + 's';
+
+            var primaryLink = p.demoUrl || p.repoUrl || p.href;
+
+            var actionsHtml = '<div class="p-actions">';
+            if (p.demoUrl) {
+                actionsHtml += '<a href="' + p.demoUrl + '" target="_blank" rel="noopener" class="p-btn p-btn-demo">' + (p.demoLabel || 'Live Demo') + ' ↗</a>';
+            }
+            if (p.repoUrl) {
+                actionsHtml += '<a href="' + p.repoUrl + '" target="_blank" rel="noopener" class="p-btn p-btn-code">' + (p.repoLabel || 'GitHub') + ' ↗</a>';
+            }
+            actionsHtml += '</div>';
+
+            row.innerHTML =
+                '<span class="p-num">' + p.n + '</span>' +
+                '<div class="p-body">' +
+                    '<div class="p-top">' +
+                        '<h3><a href="' + primaryLink + '" target="_blank" rel="noopener" class="p-title-link">' + p.title + '</a></h3>' +
+                        '<span class="p-badge ' + p.tone + '"><span class="badge-dot"></span>' + p.badge + '</span>' +
+                    '</div>' +
+                    '<p class="p-desc">' + p.desc + '</p>' +
+                    '<div class="p-tags">' + p.tags.map(function (t) { return '<span>' + t + '</span>'; }).join('') + '</div>' +
+                    actionsHtml +
+                '</div>' +
+                '<div class="p-right">' +
+                    '<a href="' + primaryLink + '" target="_blank" rel="noopener" class="p-qr-wrap" title="Open ' + p.title + '">' +
+                        '<img src="assets/project/' + p.n + '.svg" class="qr-img" alt="Project QR">' +
+                    '</a>' +
+                    '<a href="' + primaryLink + '" target="_blank" rel="noopener" class="p-arrow" aria-label="Open link">→</a>' +
+                '</div>';
+
+            pl.appendChild(row);
+        });
+    }
+    var pc = $('#proj-count'); if (pc) pc.textContent = ('0' + S.projects.length).slice(-2) + ' PROJECTS · ALL SHIPPED';
     // education
     var edu = $('#edu'); if (edu) { edu.innerHTML = ''; S.education.forEach(function (e) { var li = el('li'); li.innerHTML = '<span class="yr">' + e.yr + '</span><div><b>' + e.title + '</b><span>' + e.sub + '</span></div>'; edu.appendChild(li); }); }
     // certs

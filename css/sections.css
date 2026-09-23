@@ -155,7 +155,8 @@
 .p-tags {
     display: flex;
     gap: 8px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin-bottom: 6px
 }
 
 .p-tags span {
@@ -174,9 +175,116 @@
     color: var(--cyan)
 }
 
+.p-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.p-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.25s ease;
+}
+
+.p-btn-demo {
+    background: color-mix(in srgb, var(--cyan) 14%, transparent);
+    color: var(--cyan);
+    border: 1px solid color-mix(in srgb, var(--cyan) 45%, transparent);
+}
+
+.p-btn-demo:hover {
+    background: var(--cyan);
+    color: #060f18;
+    border-color: var(--cyan);
+    box-shadow: 0 0 16px color-mix(in srgb, var(--cyan) 40%, transparent);
+    transform: translateY(-1px);
+}
+
+.p-btn-code {
+    background: var(--bg-2);
+    color: var(--muted);
+    border: 1px solid var(--line-strong);
+}
+
+.p-btn-code:hover {
+    color: var(--text);
+    border-color: var(--cyan);
+    background: var(--surface);
+    transform: translateY(-1px);
+}
+
+.badge-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--mint);
+    margin-right: 6px;
+    box-shadow: 0 0 8px var(--mint);
+    animation: pulseDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.35; transform: scale(0.85); }
+}
+
+.p-title-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.p-title-link:hover {
+    color: var(--cyan);
+}
+
+.p-right {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.p-qr-wrap {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.p-qr-wrap:hover {
+    transform: scale(1.06);
+}
+
+.p-qr-wrap .qr-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    opacity: 0.85;
+    border: 1px solid var(--line);
+    transition: opacity 0.3s, border-color 0.3s;
+}
+
+.p-qr-wrap:hover .qr-img {
+    opacity: 1;
+    border-color: var(--cyan);
+}
+
 .p-arrow {
     font-size: 1.5rem;
     color: var(--muted);
+    text-decoration: none;
     transition: transform .35s, color .35s
 }
 
